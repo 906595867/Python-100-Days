@@ -1,203 +1,203 @@
 """
 绘制小猪佩奇
 """
-from turtle import *
+# from turtle import *
+import turtle
 
-
-def nose(x,y):
+def nose(x, y):
     """画鼻子"""
-    penup()
+    turtle.penup()
     # 将海龟移动到指定的坐标
-    goto(x,y)
-    pendown()
+    turtle.goto(x, y)
+    turtle.pendown()
     # 设置海龟的方向（0-东、90-北、180-西、270-南）
-    setheading(-30)
-    begin_fill()
+    turtle.setheading(-30)
+    turtle.begin_fill()
     a = 0.4
     for i in range(120):
-        if 0 <= i < 30 or 60 <= i <90:
+        if 0 <= i < 30 or 60 <= i < 90:
             a = a + 0.08
             # 向左转3度
-            left(3)
+            turtle.left(3)
             # 向前走
-            forward(a)
+            turtle.forward(a)
         else:
             a = a - 0.08
-            left(3)
-            forward(a)
-    end_fill()
-    penup()
-    setheading(90)
-    forward(25)
-    setheading(0)
-    forward(10)
-    pendown()
+            turtle.left(3)
+            turtle.forward(a)
+    turtle.end_fill()
+    turtle.penup()
+    turtle.setheading(90)
+    turtle.forward(25)
+    turtle.setheading(0)
+    turtle.forward(10)
+    turtle.pendown()
     # 设置画笔的颜色(红, 绿, 蓝)
-    pencolor(255, 155, 192)
-    setheading(10)
-    begin_fill()
-    circle(5)
-    color(160, 82, 45)
-    end_fill()
-    penup()
-    setheading(0)
-    forward(20)
-    pendown()
-    pencolor(255, 155, 192)
-    setheading(10)
-    begin_fill()
-    circle(5)
-    color(160, 82, 45)
-    end_fill()
+    turtle.pencolor(255, 155, 192)
+    turtle.setheading(10)
+    turtle.begin_fill()
+    turtle.circle(5)
+    turtle.color(160, 82, 45)
+    turtle.end_fill()
+    turtle.penup()
+    turtle.setheading(0)
+    turtle.forward(20)
+    turtle.pendown()
+    turtle.pencolor(255, 155, 192)
+    turtle.setheading(10)
+    turtle.begin_fill()
+    turtle.circle(5)
+    turtle.color(160, 82, 45)
+    turtle.end_fill()
 
 
 def head(x, y):
     """画头"""
-    color((255, 155, 192), "pink")
-    penup()
-    goto(x,y)
-    setheading(0)
-    pendown()
-    begin_fill()
-    setheading(180)
-    circle(300, -30)
-    circle(100, -60)
-    circle(80, -100)
-    circle(150, -20)
-    circle(60, -95)
-    setheading(161)
-    circle(-300, 15)
-    penup()
-    goto(-100, 100)
-    pendown()
-    setheading(-30)
+    turtle.color((255, 155, 192), "pink")
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.setheading(0)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.setheading(180)
+    turtle.circle(300, -30)
+    turtle.circle(100, -60)
+    turtle.circle(80, -100)
+    turtle.circle(150, -20)
+    turtle.circle(60, -95)
+    turtle.setheading(161)
+    turtle.circle(-300, 15)
+    turtle.penup()
+    turtle.goto(-100, 100)
+    turtle.pendown()
+    turtle.setheading(-30)
     a = 0.4
     for i in range(60):
-        if 0<= i < 30 or 60 <= i < 90:
+        if 0 <= i < 30 or 60 <= i < 90:
             a = a + 0.08
-            lt(3) #向左转3度
-            fd(a) #向前走a的步长
+            turtle.lt(3)  # 向左转3度
+            turtle.fd(a)  # 向前走a的步长
         else:
             a = a - 0.08
-            lt(3)
-            fd(a)
-    end_fill()
+            turtle.lt(3)
+            turtle.fd(a)
+    turtle.end_fill()
 
 
-def ears(x,y):
+def ears(x, y):
     """画耳朵"""
-    color((255, 155, 192), "pink")
-    penup()
-    goto(x, y)
-    pendown()
-    begin_fill()
-    setheading(100)
-    circle(-50, 50)
-    circle(-10, 120)
-    circle(-50, 54)
-    end_fill()
-    penup()
-    setheading(90)
-    forward(-12)
-    setheading(0)
-    forward(30)
-    pendown()
-    begin_fill()
-    setheading(100)
-    circle(-50, 50)
-    circle(-10, 120)
-    circle(-50, 56)
-    end_fill()
+    turtle.color((255, 155, 192), "pink")
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.setheading(100)
+    turtle.circle(-50, 50)
+    turtle.circle(-10, 120)
+    turtle.circle(-50, 54)
+    turtle.end_fill()
+    turtle.penup()
+    turtle.setheading(90)
+    turtle.forward(-12)
+    turtle.setheading(0)
+    turtle.forward(30)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.setheading(100)
+    turtle.circle(-50, 50)
+    turtle.circle(-10, 120)
+    turtle.circle(-50, 56)
+    turtle.end_fill()
 
 
-def eyes(x,y):
+def eyes(x, y):
     """画眼睛"""
-    color((255, 155, 192), "white")
-    penup()
-    setheading(90)
-    forward(-20)
-    setheading(0)
-    forward(-95)
-    pendown()
-    begin_fill()
-    circle(15)
-    end_fill()
-    color("black")
-    penup()
-    setheading(90)
-    forward(12)
-    setheading(0)
-    forward(-3)
-    pendown()
-    begin_fill()
-    circle(3)
-    end_fill()
-    color((255, 155, 192), "white")
-    penup()
-    seth(90)
-    forward(-25)
-    seth(0)
-    forward(40)
-    pendown()
-    begin_fill()
-    circle(15)
-    end_fill()
-    color("black")
-    penup()
-    setheading(90)
-    forward(12)
-    setheading(0)
-    forward(-3)
-    pendown()
-    begin_fill()
-    circle(3)
-    end_fill()
+    turtle.color((255, 155, 192), "white")
+    turtle.penup()
+    turtle.setheading(90)
+    turtle.forward(-20)
+    turtle.setheading(0)
+    turtle.forward(-95)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.circle(15)
+    turtle.end_fill()
+    turtle.color("black")
+    turtle.penup()
+    turtle.setheading(90)
+    turtle.forward(12)
+    turtle.setheading(0)
+    turtle.forward(-3)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.circle(3)
+    turtle.end_fill()
+    turtle.color((255, 155, 192), "white")
+    turtle.penup()
+    turtle.seth(90)
+    turtle.forward(-25)
+    turtle.seth(0)
+    turtle.forward(40)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.circle(15)
+    turtle.end_fill()
+    turtle.color("black")
+    turtle.penup()
+    turtle.setheading(90)
+    turtle.forward(12)
+    turtle.setheading(0)
+    turtle.forward(-3)
+    turtle.pendown()
+    turtle.begin_fill()
+    turtle.circle(3)
+    turtle.end_fill()
 
 
-def cheek(x,y):
+def cheek(x, y):
     """画脸颊"""
-    color((255, 155, 192))
-    penup()
-    goto(x,y)
-    pendown()
-    setheading(0)
-    begin_fill()
-    circle(30)
-    end_fill()
+    turtle.color((255, 155, 192))
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.setheading(0)
+    turtle.begin_fill()
+    turtle.circle(30)
+    turtle.end_fill()
 
 
-def mouth(x,y):
+def mouth(x, y):
     """画嘴巴"""
-    color(239, 69, 19)
-    penup()
-    goto(x, y)
-    pendown()
-    setheading(-80)
-    circle(30, 40)
-    circle(40, 80)
+    turtle.color(239, 69, 19)
+    turtle.penup()
+    turtle.goto(x, y)
+    turtle.pendown()
+    turtle.setheading(-80)
+    turtle.circle(30, 40)
+    turtle.circle(40, 80)
 
 
 def setting():
     """设置参数"""
-    pensize(4)
+    turtle.pensize(4)
     # 隐藏海龟
-    hideturtle()
-    colormode(255)
-    color((255, 155, 192), "pink")
-    setup(840, 500)
-    speed(10)
+    turtle.hideturtle()
+    turtle.colormode(255)
+    turtle.color((255, 155, 192), "pink")
+    turtle.setup(840, 500)
+    turtle.speed(10)
 
 
 def main():
     """主函数"""
-    setting() 
+    setting()
     nose(-100, 100)
     head(-69, 167)
     ears(0, 160)
     eyes(0, 140)
     cheek(80, 10)
     mouth(-20, 30)
-    done()
+    turtle.done()
 
 
 if __name__ == '__main__':
