@@ -18,6 +18,7 @@ def myfilter(mystr):
 
 # help()
 print(chr(0x9a86))
+print(hex(10))
 print(hex(ord('骆')))
 print(abs(-1.2345))
 print(round(-1.2345))

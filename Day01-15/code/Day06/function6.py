@@ -12,7 +12,8 @@ def foo1():
     a = 5
 
 
-foo1()
+foo_ = foo1()
+print(foo_)
 # print(a)  # NameError
 
 # 全局作用域
@@ -27,17 +28,17 @@ foo2()
 
 
 def foo3():
-    b = 100     # 局部变量
+    b = 100  # 局部变量
     print(b)
 
 
 foo3()
-print(b)
+print("%d==" % b)
 
 
 def foo4():
     global b
-    b = 200     # 全局变量
+    b = 200  # 全局变量
     print(b)
 
 
