@@ -18,7 +18,8 @@ def main():
     print(t[3])
     # 遍历元组中的值
     for member in t:
-        print(member)
+        print(member, end=" ")
+    print()
     # 重新给元组赋值
     # t[0] = '王大锤'      # TypeError
     # 变量t重新引用了新的元组 原来的元组被垃圾回收

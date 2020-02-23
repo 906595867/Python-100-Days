@@ -16,6 +16,8 @@ def main():
         for col, subj in enumerate(subjs):
             scores[row][col] = float(input(subj + ': '))
     print(scores)
+
+
 #   for row, name in enumerate(names):
 #       print('请输入%s的成绩' % name)
 #       scores[row] = [None] * len(subjs)
