@@ -23,14 +23,14 @@ def main():
     print()
     # 列表切片
     fruits2 = fruits[1:4]
-    print(fruits2)
+    print('fruits2==', fruits2)
     # fruit3 = fruits  # 没有复制列表只创建了新的引用
     fruits3 = fruits[:]
     print(fruits3)
     fruits4 = fruits[-3:-1]
-    print(fruits4)
+    print("fruits4==", fruits4)
     fruits5 = fruits[::-1]
-    print(fruits5)
+    print("fruits5==", fruits5)
 
 
 if __name__ == '__main__':

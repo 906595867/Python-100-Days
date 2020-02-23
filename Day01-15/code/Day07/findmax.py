@@ -8,10 +8,11 @@ Date: 2018-03-06
 
 
 def main():
-    fruits = ['grape', 'apple', 'strawberry', 'waxberry', 'pitaya']
+    fruits = ['grape', 'apple', 'strawberry', 'waxberry', 'pitaya',"za"]
     # 直接使用内置的max和min函数找出列表中最大和最小元素
-    # print(max(fruits))
-    # print(min(fruits))
+    print(max(fruits))
+    print(min(fruits))
+    print("=======")
     max_value = min_value = fruits[0]
     for index in range(1, len(fruits)):
         if fruits[index] > max_value:

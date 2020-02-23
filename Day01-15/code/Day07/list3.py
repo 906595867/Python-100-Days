@@ -31,6 +31,7 @@ def main():
     # 生成器(节省空间但生成下一个元素时需要花费时间)
     gen = (m + n for m in 'ABCDEFG' for n in '12345')
     print(gen)
+    print("gen==", type(gen))
     for elem in gen:
         print(elem, end=' ')
     print()

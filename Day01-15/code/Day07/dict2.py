@@ -15,7 +15,7 @@ def main():
     print(stu.items())
     for elem in stu.items():
         print(elem)
-        print(elem[0], elem[1])
+        print('=='+elem[0], elem[1])
     if 'age' in stu:
         stu['age'] = 20
     print(stu)

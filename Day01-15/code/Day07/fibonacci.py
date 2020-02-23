@@ -15,6 +15,8 @@ def main():
     for val in f:
         print(val, end=' ')
 
+    print(type(f))
+
 
 if __name__ == '__main__':
     main()

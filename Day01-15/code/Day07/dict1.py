@@ -24,6 +24,7 @@ def main():
     print(scores.popitem())
     print(scores.popitem())
     print(scores.pop('Damon', 100))
+    print(scores)
     scores.clear()
     print(scores)
 
