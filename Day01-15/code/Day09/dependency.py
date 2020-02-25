@@ -38,17 +38,17 @@ class Student(object):
 
     @property
     def name(self):
-        return self._name
+        return self._namei
 
     # 学生和车之间存在依赖关系 - 学生使用了汽车
-    def drive(self, car):
-        print('%s驾驶着%s欢快的行驶在去西天的路上' % (self._name, car._brand))
-        car.accelerate(30)
-        print(car)
-        car.accelerate(50)
-        print(car)
-        car.accelerate(50)
-        print(car)
+    def drive(self, cc):
+        print('%s驾驶着%s欢快的行驶在去西天的路上' % (self._name, cc.brand))
+        cc.accelerate(30)
+        print(cc)
+        cc.accelerate(50)
+        print(cc)
+        cc.accelerate(50)
+        print(cc)
 
     def study(self, course_name):
         print('%s正在学习%s.' % (self._name, course_name))
@@ -75,7 +75,9 @@ if __name__ == '__main__':
     stu2 = Student('王大锤', 15)
     stu2.study('思想品德')
     stu2.watch_av()
-    car = Car('QQ', 120)
-    stu2.drive(car)
     print(stu1 > stu2)
     print(stu1 < stu2)
+
+
+    car = Car('QQ', 120)
+    stu2.drive(car)

@@ -54,6 +54,7 @@ car.brand = "Benz"
 print(car)
 # 如果提供了删除器可以执行下面的代码
 # del car.brand
+# print(car)
 # 属性的实现
 print(Car.brand)
 print(Car.brand.fget)
