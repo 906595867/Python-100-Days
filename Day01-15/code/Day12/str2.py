@@ -48,12 +48,12 @@ def reverse_str5(str):
 if __name__ == '__main__':
     str = 'I love Python'
     print(reverse_str1(str))
-    print(str)
+    # print(str)
     print(reverse_str2(str))
-    print(str)
+    # print(str)
     print(reverse_str3(str))
-    print(str)
+    # print(str)
     print(reverse_str4(str))
-    print(str)
+    # print(str)
     print(reverse_str5(str))
-    print(str)
+    # print(str)
