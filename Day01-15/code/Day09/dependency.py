@@ -38,7 +38,7 @@ class Student(object):
 
     @property
     def name(self):
-        return self._namei
+        return self._name
 
     # 学生和车之间存在依赖关系 - 学生使用了汽车
     def drive(self, cc):
@@ -47,6 +47,7 @@ class Student(object):
         print(cc)
         cc.accelerate(50)
         print(cc)
+        # cc.brake()
         cc.accelerate(50)
         print(cc)
 

@@ -18,7 +18,7 @@ i = False
 j = str(i)
 k = 'hello'
 m = bool(k)
-print(a)
+print("a", a)
 print(type(a))
 print(b)
 print(type(b))

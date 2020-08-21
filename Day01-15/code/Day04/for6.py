@@ -26,6 +26,7 @@ Date: 2018-03-01
 
 row = int(input('请输入行数: '))
 for i in range(row):
+    # print(i)
     for _ in range(i + 1):
         print('*', end='')
     print()
