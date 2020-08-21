@@ -33,8 +33,11 @@ class E(D):
 
     def foo(self):
         print('foo in E')
+        print("====1===")
         super().foo()
+        print("====2===")
         super(B, self).foo()
+        print("====3===")
         super(C, self).foo()
 
 
