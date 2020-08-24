@@ -34,7 +34,7 @@ class Triangle(object):
 if __name__ == '__main__':
     # 用字符串的split方法将字符串拆分成一个列表
     # 再通过map函数对列表中的每个字符串进行映射处理成小数
-    a, b, c = map(float, input('请输入三条边: ').split())
+    a, b, c = map(float, input('请输入三条边: ').split(","))
     # 先判断给定长度的三条边能否构成三角形
     # 如果能才创建三角形对象
     if Triangle.is_valid(a, b, c):
@@ -42,10 +42,10 @@ if __name__ == '__main__':
         print('周长:', tri.perimeter())
         print('面积:', tri.area())
         # 如果传入对象作为方法参数也可以通过类调用实例方法
-        # print('周长:', Triangle.perimeter(tri))
-        # print('面积:', Triangle.area(tri))
+        print('周长:', Triangle.perimeter(tri))
+        print('面积:', Triangle.area(tri))
         # 看看下面的代码就知道其实二者本质上是一致的
-        # print(type(tri.perimeter))
-        # print(type(Triangle.perimeter))
+        print(type(tri.perimeter))
+        print(type(Triangle.perimeter))
     else:
         print('不能构成三角形.')
