@@ -23,10 +23,10 @@ def build_deliver_man(man_id):
 def package_center(deliver_man, max_per_day):
     num = 1
     # 创建状态(GEN_CREATED) - 等待开始执行
-    print(getgeneratorstate(deliver_man))
+    print("getstatus1=", getgeneratorstate(deliver_man))
     deliver_man.send(None)
     # 挂起状态(GEN_SUSPENDED) - 在yield表达式处暂停
-    print(getgeneratorstate(deliver_man))
+    print("getstatus2=", getgeneratorstate(deliver_man))
     # next(deliver_man)
     while num <= max_per_day:
         package_id = 'PKG-%d' % num

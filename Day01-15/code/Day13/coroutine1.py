@@ -26,6 +26,7 @@ def package_center(deliver_man, max_per_day):
     # next(deliver_man)
     while num <= max_per_day:
         package_id = 'PKG-%d' % num
+        print("package_id=", package_id)
         deliver_man.send(package_id)
         num += 1
         sleep(0.1)

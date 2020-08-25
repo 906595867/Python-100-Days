@@ -15,6 +15,10 @@ for x in gen:
     print(x)
 
 num = 10
+
+bbb = [x ** y for x, y in zip(range(1, num), range(num - 1, 0, -1))]
+print(bbb)
+
 gen = (x ** y for x, y in zip(range(1, num), range(num - 1, 0, -1)))
 print(gen)
 n = 1
